@@ -1,6 +1,11 @@
 {
+    "autoload" : {
+      "psr-4" : {
+        "ShortR\\" : "app/ShortR"
+      }
+    },
     "require": {
         "slim/slim": "^3.7",
-        "illuminate/database": "^5.4"
+        "illuminate/database": "5.0.*"
     }
 }
