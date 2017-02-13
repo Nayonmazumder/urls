@@ -6,17 +6,17 @@
   //debug
   ini_set('display_errors','On');
 
-  require '../vendor/autoload.php';
+  require 'vendor/autoload.php';
   require 'database.php';
 
   $app = new Slim();
 
   $app->config([
-    'baseUrl' => 'http://localhost/shortener/public'
+    'baseUrl' => 'http://miniurl-beingadityak.rhcloud.com'
   ]);
 
   $app->get('/',function(){
-    echo 'Pass in a short URL to get a full URL';
+    echo '<h1 align="center">Pass in a short URL to get a full URL</h1>';
   });
 
   $app->get('/:code',function($code) use ($app) {
